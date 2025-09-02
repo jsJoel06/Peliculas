@@ -12,7 +12,6 @@ body{
 
 .navbar{
     display: flex;
-    background-color: rgb(20, 20, 20);
     box-shadow: #f4f4f4;
     border-radius: 3px;
 }
@@ -44,7 +43,6 @@ nav{
 }
 
 .overlay {
-  background: rgba(0,0,0,0.6);
   padding: 30px;
   max-width: 600px;
   margin-left: 50px;
@@ -80,7 +78,6 @@ nav{
   gap: 20px; /* Espacio entre imágenes */
   padding: 20px;
   justify-content: center; /* Centra las imágenes */
-  background-color: rgb(20, 20, 20);
   border-radius: 16px;
 }
 
