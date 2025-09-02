@@ -58,37 +58,28 @@ const [current, setCurrent] = useState(0);
         <button>ℹ Más información</button>
       </div>
     </section>
-    <section>
-       <h2 style={{marginLeft: '70px'}}>Peliculas</h2>
+ <section>
+  <h2 style={{marginLeft: '70px'}}>Películas</h2>
+  <div className="peliculas">
+    <img className='image' src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SL1500_.jpg" alt="Batman" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Wonder Woman" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" alt="Interstellar" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Avengers: Infinity War" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg" alt="The Dark Knight" />
+  </div>
+</section>
 
-       <div className="peliculas">
-        <br />
-         <img className='image' src="/src/assets/rapidoFurioso.jpeg"  alt="" />
+<section>
+  <h2 style={{marginLeft: '70px'}}>Series</h2>
+  <div className="series">
+    <img className='image' src="https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg" alt="The Boys" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg" alt="The Boys" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/qi6Edc1OPcyENecGtz8TF0DUr9e.jpg" alt="Electric Dreams" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/lP5eKh8WOcPysfELrUpGhHJGZEH.jpg" alt="The Mandalorian" />
+    <img className='image' src="https://image.tmdb.org/t/p/w500/qi6Edc1OPcyENecGtz8TF0DUr9e.jpg" alt="Electric Dreams" />
+  </div>
+</section>
 
-         <img className='image' src="/src/assets/Gato.jpeg"  alt="" />
-
-         <img className='image' src="/src/assets/BadBoys.jpeg"  alt="" />
-
-         <img className='image' src="/src/assets/trans.jpeg" alt="" />
-         
-         <img className='image' src="/src/assets/Lilo.jpeg" alt="" />
-       </div>
-    </section>
-     <section >
-      <h2 style={{marginLeft: '70px'}}>Series</h2>
-       <div className="series">
-         
-          <img style={{marginTop: '20px'}} className='image' src="/src/assets/Boys.jpeg"  alt="" />
-
-         <img style={{marginTop: '20px'}}  className='image' src="/src/assets/er.jpeg"  alt="" />
-
-         <img style={{marginTop: '20px'}}  className='image' src="/src/assets/juego.jpeg"  alt="" />
-
-         <img style={{marginTop: '20px'}}  className='image' src="/src/assets/From.jpeg" alt="" />
-         
-         <img style={{marginTop: '20px'}}  className='image' src="/src/assets/Electric.jpeg" alt="" />
-       </div>
-     </section>
 
       <div className="container">
      <footer >

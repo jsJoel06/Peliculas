@@ -125,3 +125,46 @@ nav{
     margin-left: 0;
   }
 }
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  padding: 10px 20px;
+  flex-wrap: wrap; /* permite que los items bajen si la pantalla es pequeña */
+  border-radius: 3px;
+}
+
+/* Links */
+nav a {
+  text-decoration: none;
+  color: red;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+/* Logo */
+.logo h2 {
+  margin: 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* los items van de arriba a abajo */
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin: 5px 10px;
+  }
+}
