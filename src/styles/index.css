@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roberto', sans-serif;
+    background-color: black;
+    color: red;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgb(20, 20, 20);
+    box-shadow: #f4f4f4;
+    border-radius: 3px;
+}
+
+h2{
+    margin-right: 50vh;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    margin: 50px 20px;
+    font-size: 1.5em;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+
+.hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  max-width: 600px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: darkred;
+}
+
+.peliculas, .series {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes bajen de fila en pantallas pequeñas */
+  gap: 20px; /* Espacio entre imágenes */
+  padding: 20px;
+  justify-content: center; /* Centra las imágenes */
+  background-color: rgb(20, 20, 20);
+  border-radius: 16px;
+}
+
+.image:hover{
+  transform: scale(1.05);
+}
+.image{
+    width: 200px; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+  .overlay p {
+    font-size: 1rem;
+  }
+  .overlay {
+    margin-left: 20px;
+    padding: 20px;
+    max-width: 90%;
+  }
+  .image {
+    width: 45%; /* 2 imágenes por fila en tablets/móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  a {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  .image {
+    width: 90%; /* 1 imagen por fila en móviles */
+    margin-left: 0;
+  }
+}
